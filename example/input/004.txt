@@ -1,0 +1,239 @@
+Personal Name Validation Characters
+L2/09-232
+Contents
+
+1 L2/...
+2 Background
+3 Missing Characters for Word Break (from Table 3)
+3.1 Basic Latin - ASCII punctuation and symbols
+3.2 Armenian - Punctuation
+3.3 Tibetan - Marks and signs
+3.4 General Punctuation - Dashes
+3.5 Katakana - Katakana punctuation
+3.6 Katakana - Conjunction and length marks
+4 Hyphen-Named Characters
+4.1 Mongolian - Punctuation
+4.2 General Punctuation - Dashes
+4.3 General Punctuation - General punctuation
+4.4 Supplemental Punctuation - Ancient Near-Eastern linguistic symbol
+4.5 Supplemental Punctuation - Dictionary punctuation
+4.6 Small Form Variants - Small form variants
+4.7 Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+5 Proposal
+6 Background Information
+7 Characters added by Word Boundaries
+7.1 Basic Latin - ASCII punctuation and symbols
+7.2 Latin 1 Supplement - Latin-1 punctuation and symbols
+7.3 Greek And Coptic - Punctuation
+7.4 Hebrew - Additional punctuation
+7.5 General Punctuation - General punctuation
+7.6 Vertical Forms - Glyphs for vertical variants
+7.7 CJK Compatibility Forms - Glyphs for vertical variants
+7.8 CJK Compatibility Forms - Overscores and underscores
+7.9 Small Form Variants - Small form variants
+7.10 Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+8 Table 3. Candidate Characters for Inclusion in Identifiers
+9 Word Characters vs Identifier Characters
+9.1 Basic Latin - ASCII punctuation and symbols
+9.2 Greek And Coptic - Punctuation
+9.3 Cyrillic - Historic miscellaneous
+9.4 Arabic - Koranic annotation signs
+9.5 General Punctuation - General punctuation
+9.6 Combining Diacritical Marks For Symbols - Enclosing diacritics
+9.7 Combining Diacritical Marks For Symbols - Additional enclosing diacritics
+9.8 Enclosed Alphanumerics - Circled Latin letters
+9.9 Supplemental Punctuation - Medievalist punctuation
+9.10 Cyrillic Extended B - Combining numeric signs
+9.11 Vertical Forms - Glyphs for vertical variants
+9.12 Small Form Variants - Small form variants
+9.13 Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+9.14 Armenian - Punctuation
+9.15 Tibetan - Marks and signs
+9.16 Katakana - Katakana punctuation
+9.17 Katakana - Conjunction and length marks
+From: Mark Davis
+Date: 2009-07-07
+Background
+For entry field validation, implementations sometimes need to know which characters can occur in personal names. While it is a bit fuzzy exactly what this means, they want to distinguish between characters like those in "James Smith-Faley, Jr." and those in "!#@♥≠". Note that it is important to be reasonably lenient: it is extremely annoying for people not to be able to add legitimate names, like "di Silva", because those names have characters like space.
+
+Typically, these personal name validations should not be language-specific; I might be using a website in a language other than the one for my name, for example. While a more sophisticated validation might use context among characters, a basic validation just wants to know "what characters can be part of names?".
+
+Much of this can be derived (with a bit of work) from http://www.unicode.org/reports/tr29/#Default_Word_Boundaries. The basic characterization of characters that can be in words is from the combination of properties:
+
+Alphabetic + Marks + Cf (for items like joiners).
+
+Word boundaries adds 27 characters: http://unicode.org/cldr/utility/list-unicodeset.jsp... that also should be included, at least prima facie (see list at the end of this document). That brings us to:
+
+Alphabetic + Marks + Cf + WB_Additions
+
+But we also include other characters in http://www.unicode.org/reports/tr31/tr31-10.html#Specific_Character_Adjustments Table 3 that are suitable for identifiers -- and words. (That set is http://unicode.org/cldr/utility/list-unicodeset.jsp.... Most of those are included in the above, but the following are not:
+
+Missing Characters for Word Break (from Table 3)
+Basic Latin - ASCII punctuation and symbols
+U+002D ( - ) HYPHEN-MINUS
+Armenian - Punctuation
+U+058A ( ֊ ) ARMENIAN HYPHEN
+Tibetan - Marks and signs
+U+0F0B ( ་ ) TIBETAN MARK INTERSYLLABIC TSHEG
+General Punctuation - Dashes
+U+2010 ( ‐ ) HYPHEN
+Katakana - Katakana punctuation
+U+30A0 ( ゠ ) KATAKANA-HIRAGANA DOUBLE HYPHEN
+Katakana - Conjunction and length marks
+U+30FB ( ・ ) KATAKANA MIDDLE DOT
+
+Some of these clearly need to be allowed in names. There are seven other characters with "HYPHEN" in their names. Of these, all but the BULLET one probably qualify.
+Hyphen-Named Characters
+Mongolian - Punctuation
+U+1806 ( ᠆ ) MONGOLIAN TODO SOFT HYPHEN
+General Punctuation - Dashes
+U+2011 ( ‑ ) NON-BREAKING HYPHEN
+General Punctuation - General punctuation
+U+2043 ( ⁃ ) HYPHEN BULLET
+Supplemental Punctuation - Ancient Near-Eastern linguistic symbol
+U+2E17 ( ⸗ ) DOUBLE OBLIQUE HYPHEN
+Supplemental Punctuation - Dictionary punctuation
+U+2E1A ( ⸚ ) HYPHEN WITH DIAERESIS
+Small Form Variants - Small form variants
+U+FE63 ( ﹣ ) SMALL HYPHEN-MINUS
+Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+U+FF0D ( － ) FULLWIDTH HYPHEN-MINUS
+
+Proposal
+Based on this, there are a few items I recommend. First is to reconconcile some gratuitious differences between word characters and identifier characters that were uncovered in this process. That is, do the following (after review to catch exceptions):
+Add the missing characters from Table 3. Candidate Characters for Inclusion in Identifiers in TR31 (also listed in Missing Characters from Word Break above) to \p{Word_Break=MidLetter}
+Add the missing characters from \p{Word_Break=MidLetter} -- those that are isNFKC -- to Table 3.
+Add the hyphen characters above, excluding the hyphen bullet, to \p{Word_Break=MidLetter} and those that are isNFKC to Table 3).
+Add an invariant test for consistency between the WB properties and Table 3.
+Second is to have a list of "name validation" characters that people can use. That is, make it easier for people to get a set of name-validation characters by at providing a list of the exceptional characters in a new section of TR29. Aside from the above characters, this list would also include ".," (and their variants) and space (and its variants). The text in that section needs have a number of caveats to make it clear what the limitations on the use of the list are. In particular:
+It is only a guideline, and may need tailoring for different environments
+It is a lenient, non-language-specific set - for language-specific characters one should see CLDR.
+It includes characters that may not be appropriate for identifiers, and those that would not be parts of words.
+It does not include contextual tests
+Additional tests may be needed in cases where security is at issue.
+The set can be narrowed if name fields are split out. For example, "," may not be necessary if titles are split out; if titles are not allowed, "." may not be necessary.
+It contains some other characters that may be part of words in a broad sense, such as "c:a" in Swedish or a dictionary word containing hyphenation points, that might not normally be part of names.
+
+Background Information
+Characters added by Word Boundaries
+Basic Latin - ASCII punctuation and symbols
+U+0027 ( ' ) APOSTROPHE
+U+002E ( . ) FULL STOP
+U+003A ( : ) COLON
+U+005F ( _ ) LOW LINE
+Latin 1 Supplement - Latin-1 punctuation and symbols
+U+00B7 ( · ) MIDDLE DOT
+Greek And Coptic - Punctuation
+U+0387 ( · ) GREEK ANO TELEIA
+Hebrew - Additional punctuation
+U+05F3 ( ‎׳‎ ) HEBREW PUNCTUATION GERESH
+U+05F4 ( ‎״‎ ) HEBREW PUNCTUATION GERSHAYIM
+General Punctuation - General punctuation
+U+2018 ( ‘ ) LEFT SINGLE QUOTATION MARK
+U+2019 ( ’ ) RIGHT SINGLE QUOTATION MARK
+U+2024 ( ․ ) ONE DOT LEADER
+U+2027 ( ‧ ) HYPHENATION POINT
+U+203F ( ‿ ) UNDERTIE
+U+2040 ( ⁀ ) CHARACTER TIE
+U+2054 ( ⁔ ) INVERTED UNDERTIE
+Vertical Forms - Glyphs for vertical variants
+U+FE13 ( ︓ ) PRESENTATION FORM FOR VERTICAL COLON
+CJK Compatibility Forms - Glyphs for vertical variants
+U+FE33 ( ︳ ) PRESENTATION FORM FOR VERTICAL LOW LINE
+U+FE34 ( ︴ ) PRESENTATION FORM FOR VERTICAL WAVY LOW LINE
+CJK Compatibility Forms - Overscores and underscores
+U+FE4D ( ﹍ ) DASHED LOW LINE
+U+FE4E ( ﹎ ) CENTRELINE LOW LINE
+U+FE4F ( ﹏ ) WAVY LOW LINE
+Small Form Variants - Small form variants
+U+FE52 ( ﹒ ) SMALL FULL STOP
+U+FE55 ( ﹕ ) SMALL COLON
+Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+U+FF07 ( ＇ ) FULLWIDTH APOSTROPHE
+U+FF0E ( ． ) FULLWIDTH FULL STOP
+U+FF1A ( ： ) FULLWIDTH COLON
+U+FF3F ( ＿ ) FULLWIDTH LOW LINE
+
+Table 3. Candidate Characters for Inclusion in Identifiers
+0027 (') APOSTROPHE
+002D (-) HYPHEN-MINUS
+002E (.) FULL STOP
+003A (:) COLON
+00B7 (·) MIDDLE DOT
+058A (֊) ARMENIAN HYPHEN
+05F3 (׳) HEBREW PUNCTUATION GERESH
+05F4 (״) HEBREW PUNCTUATION GERSHAYIM
+0F0B ( ་ ) TIBETAN MARK INTERSYLLABIC TSHEG
+200C () ZERO WIDTH NON-JOINER*
+200D () ZERO WIDTH JOINER*
+2010 (‐) HYPHEN
+2019 (’) RIGHT SINGLE QUOTATION MARK
+2027 (‧) HYPHENATION POINT
+30A0 (=) KATAKANA-HIRAGANA DOUBLE HYPHEN
+30FB ( ・ ) KATAKANA MIDDLE DOT
+
+Word Characters vs Identifier Characters
+The following are the word characters from #31, minus Cf:
+ [\p{alpha}\p{WB=Extend}\p{WB=FO}\p{WB=LE}\p{WB=ML}\p{WB=MB}\p{WB=EX}-\p{cf}]
+
+And the Identifier characters from #31 (including table 1)
+[[:L:][:Nl:][:Mn:][:Mc:][\u0027\u002D\u002E\u003A\u00B7\u058A\u05F3
+\u05F4\u0F0B\u200C\u200D\u2010\u2019\u2027\u30A0\u30FB][:Pc:]
+-[:Pattern_Syntax:]
+-[:Pattern_White_Space:]]]
+
+Here are Word characters minus Identifier characters.
+Basic Latin - ASCII punctuation and symbols
+U+0027 ( ' ) APOSTROPHE
+U+002E ( . ) FULL STOP
+U+003A ( : ) COLON
+Greek And Coptic - Punctuation
+U+0387 ( · ) GREEK ANO TELEIA
+Cyrillic - Historic miscellaneous
+U+0488 ( ҈ ) COMBINING CYRILLIC HUNDRED THOUSANDS SIGN
+U+0489 ( ҉ ) COMBINING CYRILLIC MILLIONS SIGN
+Arabic - Koranic annotation signs
+U+06DE ( ۞ ) ARABIC START OF RUB EL HIZB
+General Punctuation - General punctuation
+U+2018 ( ‘ ) LEFT SINGLE QUOTATION MARK
+U+2019 ( ’ ) RIGHT SINGLE QUOTATION MARK
+U+2024 ( ․ ) ONE DOT LEADER
+U+2027 ( ‧ ) HYPHENATION POINT
+Combining Diacritical Marks For Symbols - Enclosing diacritics
+U+20DD ( ⃝ ) COMBINING ENCLOSING CIRCLE
+U+20DE ( ⃞ ) COMBINING ENCLOSING SQUARE
+U+20DF ( ⃟ ) COMBINING ENCLOSING DIAMOND
+U+20E0 ( ⃠ ) COMBINING ENCLOSING CIRCLE BACKSLASH
+Combining Diacritical Marks For Symbols - Additional enclosing diacritics
+U+20E2 ( ⃢ ) COMBINING ENCLOSING SCREEN
+U+20E3 ( ⃣ ) COMBINING ENCLOSING KEYCAP
+U+20E4 ( ⃤ ) COMBINING ENCLOSING UPWARD POINTING TRIANGLE
+Enclosed Alphanumerics - Circled Latin letters
+U+24B6 ( Ⓐ ) CIRCLED LATIN CAPITAL LETTER A
+..
+U+24E9 ( ⓩ ) CIRCLED LATIN SMALL LETTER Z
+Supplemental Punctuation - Medievalist punctuation
+U+2E2F ( ⸯ ) VERTICAL TILDE
+Cyrillic Extended B - Combining numeric signs
+U+A670 ( ꙰ ) COMBINING CYRILLIC TEN MILLIONS SIGN
+U+A671 ( ꙱ ) COMBINING CYRILLIC HUNDRED MILLIONS SIGN
+U+A672 ( ꙲ ) COMBINING CYRILLIC THOUSAND MILLIONS SIGN
+Vertical Forms - Glyphs for vertical variants
+U+FE13 ( ︓ ) PRESENTATION FORM FOR VERTICAL COLON
+Small Form Variants - Small form variants
+U+FE52 ( ﹒ ) SMALL FULL STOP
+U+FE55 ( ﹕ ) SMALL COLON
+Halfwidth And Fullwidth Forms - Fullwidth ASCII variants
+U+FF07 ( ＇ ) FULLWIDTH APOSTROPHE
+U+FF0E ( ． ) FULLWIDTH FULL STOP
+U+FF1A ( ： ) FULLWIDTH COLON
+
+And the Identifier Characters minus the Word Characters
+Armenian - Punctuation
+U+058A ( ֊ ) ARMENIAN HYPHEN
+Tibetan - Marks and signs
+U+0F0B ( ་ ) TIBETAN MARK INTERSYLLABIC TSHEG
+Katakana - Katakana punctuation
+U+30A0 ( ゠ ) KATAKANA-HIRAGANA DOUBLE HYPHEN
+Katakana - Conjunction and length marks
+U+30FB ( ・ ) KATAKANA MIDDLE DOT

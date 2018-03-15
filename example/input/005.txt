@@ -1,0 +1,112 @@
+Discuss the Elastic Stack
+Sign UpLog In
+ :tada: We're Doubling Down on Open :tada:
+
+As we just announced at our Elastic{ON} 2018 Keynote, we're going to be opening the code for X-Pack as of our 6.3 release!
+
+For all the details head over to the announcement blog post, from Shay Banon -
+https://www.elastic.co/blog/doubling-down-on-open
+
+I am excited to announce that we will be opening the code of our X-Pack features - security, monitoring, alerting, graph, reporting, dedicated APM UIs, Canvas, Elasticsearch SQL, Search Profiler, Grok Debugger, Elastic Maps Service zoom levels, and machine learning - to facilitate greater collaboration with our customers and community in much the same way we do for our open source code today.
+
+Word delimiter filter - ignore words with hyphen
+Elasticsearch
+
+Patrick_NorwoodJan '14
+Hi all,
+
+I would really appreciate if anyone could navigate me, how I should set my
+word_delimiter_filter to skip words containing hyphen? The desired result
+is that the word with '-' in them, will be ignored by word delimiter filter.
+One possible way that I tried to implement was using protected_words option
+with regular expression - but I am not sure whether this is possible.
+My settings for word_delimiter_filter are as follows:
+:word_delimiter_filter => {
+"type" => 'word_delimiter',
+"preserve_original" => true,
+"generate_number_parts" => false,
+"split_on_case_change" => false,
+"split_on_numerics" => false,
+}
+
+I tried adding this: "protected_words" => [/.-./] ...but it did not
+work.
+
+Is there any way to achieve this? Thanks in advance.
+
+--
+You received this message because you are subscribed to the Google Groups "elasticsearch" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to elasticsearch+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/elasticsearch/be0e2372-491f-423a-8a05-d1a2400e622f%40googlegroups.com.
+For more options, visit https://groups.google.com/groups/opt_out.
+
+
+
+created
+Jan '14
+last reply
+Jul '17
+2
+replies
+395
+views
+3
+users
+3
+links
+
+
+Binh_LyJan '14
+Patrick,
+
+If I understand correctly, you just want to preserve the dashes as is and
+not "word-delimit" on them. You can try something like this (I am just
+preserving the - symbol: \u002D):
+
+  "analysis": {
+    "analyzer": {
+      "wd1": {
+        "tokenizer": "whitespace",
+        "filter": [
+          "wd1"
+        ]
+      }
+    },
+    "filter": {
+      "wd1": {
+        "type": "word_delimiter",
+        "type_table": [
+          "\\u002D => ALPHANUM"
+        ]
+      }
+    }
+  }
+--
+You received this message because you are subscribed to the Google Groups "elasticsearch" group.
+To unsubscribe from this group and stop receiving emails from it, send an email to elasticsearch+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/elasticsearch/8bb175ed-eb4e-4824-9d54-82439383779b%40googlegroups.com.
+For more options, visit https://groups.google.com/groups/opt_out.
+
+
+3 YEARS LATER
+
+CLOSED JUL 6, '17
+
+ Reply
+Suggested Topics
+Topic	Category	Replies	Views	Activity
+XML through ingest attachment only showing values in attachment.content, not full tree	Elasticsearch	2	71	20d
+How to get count of document with its range using DSL query	Elasticsearch	3	22	15d
+SynonymTokenFilterFactory uses which Synonym Map?	Elasticsearch	1	42	22d
+Dynamic list of fields to be returned in search	Elasticsearch	1	64	26d
+Using Java High Level Rest client does not auto-retry Bulk requests	Elasticsearch	2	76	12d
+There are 8 new topics remaining, or browse other topics in Elasticsearch
+© 2016. All Rights Reserved - Elasticsearch
+
+Elasticsearch is a trademark of Elasticsearch BV, registered in the U.S. and in other countries Trademarks Terms Privacy Brand Code of Conduct
+Apache, Apache Lucene, Apache Hadoop, Hadoop, HDFS and the yellow elephant logo are trademarks of the Apache Software Foundation in the United States and/or other countries.
+
+
+
+
+

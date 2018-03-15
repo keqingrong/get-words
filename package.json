@@ -1,0 +1,20 @@
+{
+  "name": "get-words",
+  "version": "0.0.0",
+  "description": "Get English words from the text string",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "repository": "keqingrong/get-words",
+  "scripts": {
+    "dev": "node example/index.js"
+  },
+  "keywords": [
+    "vocabulary",
+    "words"
+  ],
+  "author": "Qingrong Ke <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
+  "license": "MIT"
+}

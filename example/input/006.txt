@@ -1,0 +1,323 @@
+
+Interpunct
+From Wikipedia, the free encyclopedia
+"Middot" redirects here. For the religious tractate, see Middot (Talmud).
+·
+Interpunct
+Punctuation
+apostrophe	’  '
+brackets	[ ]  ( )  { }  ⟨ ⟩
+colon	:
+comma	,  ،  、
+dash	‒  –  —  ―
+ellipsis	…  ...  ⋯  ᠁  ฯ
+exclamation mark	 !
+full stop, period	.
+guillemets	‹ ›  « »
+hyphen	‐
+hyphen-minus	-
+question mark	 ?
+quotation marks	‘ ’  “ ”  ' '  " "
+semicolon	;
+slash, stroke, solidus	/  ⁄
+Word dividers
+interpunct	·
+space	       
+General typography
+ampersand	&
+asterisk	*
+at sign	@
+backslash	\
+bullet	•
+caret	^
+dagger	† ‡
+degree	°
+ditto mark	”
+inverted exclamation mark	¡
+inverted question mark	¿
+komejirushi, kome, reference mark	※
+number sign, pound, hash	#
+numero sign	№
+obelus	÷
+multiplication sign	×
+ordinal indicator	º ª
+percent, per mil	 % ‰
+plus and minus	+ −
+equals sign	=
+basis point	‱
+pilcrow	¶
+prime	′  ″  ‴
+section sign	§
+tilde	~
+underscore, understrike	_
+vertical bar, pipe, broken bar	|  ‖  ¦
+Intellectual property
+copyright	©
+sound-recording copyright	℗
+registered trademark	®
+service mark	℠
+trademark	™
+Currency
+currency sign	¤
+currency symbols
+؋ ​₳ ​ ฿ ​₿ ​ ₵ ​¢ ​₡ ​₢ ​ $ ​₫ ​₯ ​֏ ​ ₠ ​€ ​ ƒ ​₣ ​ ₲ ​ ₴ ​ ₭ ​ ₺ ​₾ ​ ₼ ​ℳ ​₥ ​ ₦ ​ ₧ ​₱ ​₰ ​£ ​ 元 圆 圓 ​﷼ ​៛ ​₽ ​₹ ₨ ​ ₪ ​ ৳ ​₸ ​₮ ​ ₩ ​ ¥ 円
+
+Uncommon typography
+asterism	⁂
+fleuron, hedera	❧
+index, fist	☞
+interrobang	‽
+irony punctuation	⸮
+lozenge	◊
+tie	⁀
+Related
+Diacritics Logic symbols
+Whitespace characters
+In other scripts
+Chinese Hebrew Japanese Korean
+Category Category Portal Portal
+Wikipedia book Book
+v t e
+An interpunct ( · ), also known as an interpoint,[1] middle dot, middot, and centered dot or centred dot, is a punctuation mark consisting of a vertically centered dot used for interword separation in ancient Latin script. (Word-separating spaces did not appear until some time between a.d. 600 and 800.) It appears in a variety of uses in some modern languages and is present in Unicode as code point U+00B7 · Middle dot (HTML &#183; · &middot;).
+
+The multiplication dot (U+2219 ∙ bullet operator (HTML &#8729;) or U+22C5 ⋅ dot operator (HTML &#8901; · &sdot;)), whose glyphs are similar or identical to the interpunct, is a multiplication sign optionally used instead of the styled ×: a⋅b is equivalent to a × b or "a times b". The same sign is also used in vector multiplication to discriminate between the scalar product (a ⋅ b) and the vector cross product (a × b) or exterior product (a ∧ b). As a multiplication operator, it is also encountered in symbols for compound units such as the newton-meter (N·m or N⋅m). The multiplication dot is a separate Unicode character (U+22C5), but is often silently replaced by the interpunct or bullet (U+2022 • bullet (HTML &#8226; · &bull;)).
+
+Contents
+1	In written language
+1.1	English
+1.2	Catalan
+1.3	Chinese
+1.4	Hokkien
+1.5	Tibetan
+1.6	Ethiopic
+1.7	Franco-Provençal
+1.8	Greek
+1.9	Japanese
+1.10	Korean
+1.11	Latin
+1.12	Occitan
+1.13	Old Irish
+1.14	Runes
+2	In mathematics and science
+3	Keyboard input
+4	Similar symbols
+5	See also
+6	References
+In written language
+Various dictionaries use the interpunct (in this context, sometimes called hyphenation point) to indicate syllabification within a word with multiple syllables. There is also a separate Unicode character, U+2027 ‧ hyphenation point.
+
+English
+In British typography, the space dot is an interpunct used as the formal decimal point. Its use is advocated by laws and by academic circles such as the Cambridge University History Faculty Style Guide[2] and is mandated by some UK-based academic journals such as The Lancet.[3] When the British currency was decimalised in 1971, the official advice issued was to write decimal amounts with a raised point (for example, £21·48) and to use a decimal point "on the line" only when typesetting constraints made it unavoidable. This usage, however, has been declining since the mid-1970s, as the importation of electronic typewriters, calculators and computers from the United States and Japan familiarised Britons with using full stops and made the space dot harder to typeset.[citation needed]. The space dot may still be used frequently in handwriting, however.
+
+In the Shavian alphabet, interpuncts replace capitalization as the marker of proper nouns. The dot is placed at the beginning of a word.
+
+Catalan
+
+Metro station Paral·lel in Barcelona.
+The flying point (Catalan: punt volat) is used in Catalan between two Ls in cases where each belongs to a separate syllable, for example cel·la, "cell". This distinguishes such "geminate Ls" (ela geminada), which are pronounced [ɫː], from "double L" (doble ela), which are written without the flying point and are pronounced [ʎ]. In situations where the flying point is unavailable, periods (as in col.lecció) or hyphens (as in col-lecció) are frequently used as substitutes, but this is tolerated rather than encouraged.
+
+Historically, medieval Catalan also used the symbol ⟨·⟩ as a marker for certain elisions, much like the modern apostrophe (see Occitan below), and hyphenations.
+
+There is no separate keyboard layout for Catalan: the flying point can be typed using Shift-3 in the Spanish (Spain) layout. It appears in Unicode as the letters ⟨Ŀ⟩ (U+013F) and ⟨ŀ⟩ (U+0140), but they are compatibility characters and are not frequently used nor recommended.[4] Similarly, the larger bullet (⟨•⟩, U+2022, &bull;) may be seen but is discouraged on aesthetic grounds. The preferred Unicode representation is ⟨l·⟩ (U+006C + U+00B7).
+
+Chinese
+The partition sign (Unicode code point U+2027, Hyphenation Point) is used in Chinese (which generally lacks spacing between characters) to mark divisions in transliterated foreign words, particularly names. This is properly (and in Taiwan formally[5]) a full-width punctuation mark, although sometimes narrower forms are substituted for aesthetic reasons. In particular, the regular interpunct is more commonly used as a computer input, although Chinese-language fonts typically render this as full width. When the Chinese text is romanized, the partition sign is simply replaced by a standard space or other appropriate punctuation. Thus, William Shakespeare is signified as 威廉·莎士比亞 or 威廉·莎士比亚 (p Wēilián Shāshìbǐyà), George W. Bush as 喬治·W·布殊 or 乔治·W·布什 (p Qiáozhì W. Bùshí), and the full name of the prophet Muhammad as 阿布·卡西木·穆罕默德·本·阿布杜拉·本·阿布杜勒-穆塔利卜·本·哈希姆 (p Ābù Kǎxīmù Mùhǎnmòdé Běn Ābùdùlā Běn Ābùdùlè-Mùtǎlìbǔ Běn Hāxīmǔ). Titles and other translated words are not similarly marked: Genghis Khan and Elizabeth II are simply 成吉思汗 and 伊利沙伯二世 or 伊麗莎白二世 without a partition sign.
+
+The partition sign is also used to separate book and chapter titles when they are mentioned consecutively: book first and then chapter. It also appears in Swedish sinologist Bernhard Karlgren's works, where an interpunct is used to represent the glottal stop in his reconstruction of medieval Chinese.
+
+Hokkien
+In Pe̍h-ōe-jī for Taiwanese Hokkien, middle dot is often used as a workaround for dot above right diacritic because most early encoding systems did not support this diacritic. This is now encoded as U+0358 ͘ COMBINING DOT ABOVE RIGHT (see o͘). Unicode did not support this diacritic until June 2004. Newer fonts often support it natively; however, the practice of using middle dot still exists. Historically, it was derived in the late 19th century from an older barred-o with curly tail as an adaptation to the typewriter.
+
+Tibetan
+Main article: Tibetan alphabet
+In Tibetan the interpunct ་, called ཙེག་ (tsek), is used as a morpheme delimiter.
+
+Ethiopic
+The Ge'ez (Ethiopic) language uses an interpunct of two vertically aligned dots, like a colon, but with larger dots. An example is ገድለ፡ወለተ፡ጴጥሮስ.
+
+Franco-Provençal
+In Franco-Provençal (or Arpitan), the interpunct is used in order to distinguish the following graphemes:
+
+ch·, pronounced [ʃ], versus ch, pronounced [ts]
+j·, pronounced [ʒ], versus j, pronounced [dz]
+g· before e, i, pronounced [ʒ], versus g before e, i, pronounced [dz]
+
+Greek
+Ancient Greek did not have spacing or interpuncts but instead ran all the letters together. By Late Antiquity, various marks were used to separate words, particularly the Greek comma.[6]
+
+The modern Greek ano teleia mark (άνω τελεία, ánō teleía, lit. "upper stop"), also known as the áno stigmī́ (άνω στιγμή), is the infrequently-encountered Greek semicolon and is properly romanized as such.[7] It is also used to introduce lists in the manner of an English colon.[6] In Greek text, Unicode provides a unique code point—U+0387 · Greek ano teleia[8]—but it is also expressed as an interpunct. In practice, the separate code point for ano teleia canonically decomposes to the interpunct.[6]
+
+The Hellenistic scholars of Alexandria first developed the mark for a function closer to the comma, before it fell out of use and was then repurposed for its present role.[6]
+
+Japanese
+Main article: Japanese punctuation
+Interpuncts are often used to separate transcribed foreign words written in katakana. For example, "Can't Buy Me Love" becomes 「キャント・バイ・ミー・ラヴ」 (Kyanto·bai·mī·ravu). A middle dot is also sometimes used to separate lists in Japanese instead of the Japanese comma ("、" known as tōten). Dictionaries and grammar lessons in Japanese sometimes also use a similar symbol to separate a verb suffix from its root. Note that while some fonts may render the Japanese middle dot as a square under great magnification, this is not a defining property of the middle dot that is used in China or Japan.
+
+However, the Japanese writing system usually does not use space or punctuation to separate words (though the mixing of katakana, kanji, and hiragana gives some indication of word boundary).
+
+In Japanese typography, there exist two Unicode code points:
+
+U+30FB ・ katakana middle dot, with a fixed width that is the same as most kana characters, known as fullwidth.
+U+FF65 ･ halfwidth katakana middle dot
+The interpunct also has a number of other uses in Japanese, including the following: to separate titles, names and positions: 課長補佐・鈴木 (Assistant Section Head · Suzuki); as a decimal point when writing numbers in kanji: 三・一四一五九二 (3.141 592); and in place of hyphens, dashes and colons when writing vertically.
+
+Korean
+Interpuncts are used in written Korean to denote a list of two or more words, more or less in the same way a slash (/) is used to juxtapose words in many other languages. In this role it also functions in a similar way to the English en dash, as in 미·소관계, "American–Soviet relations". The use of interpuncts has declined in years of digital typography and especially in place of slashes, but, in the strictest sense, a slash cannot replace a middle dot in Korean typography.
+
+U+318D ㆍ Hangul letter araea (아래아) is used more than a middle dot when an interpunct is to be used in Korean typography, though araea is technically not a punctuation symbol but actually an obsolete Hangul jamo. Because araea is a full-width letter, it looks better than middle dot between Hangul. In addition, it is drawn like the middle dot in Windows default Korean fonts such as Batang.
+
+Latin
+The interpunct (interpvnctvs) was regularly used in classical Latin to separate words. In addition to the most common round form, inscriptions sometimes use a small equilateral triangle for the interpunct, pointing either up or down. It may also appear as a mid-line comma, similar to the Greek practice of the time. The interpunct fell out of use c. ad 200, and Latin was then written scripta continua for several centuries.[citation needed]
+
+Occitan
+In Occitan, especially in the Gascon dialect, the interpunct (punt interior, literally, "inner dot", or ponch naut for "high / upper point") is used to distinguish the following graphemes:
+
+s·h, pronounced [s.h], versus sh, pronounced [ʃ], for example, in des·har 'to undo' vs deishar 'to leave'
+n·h, pronounced [n.h], versus nh, pronounced [ɲ], for example in in·hèrn 'hell' vs vinha 'vineyard'
+Although it is considered to be a spelling error, a period is frequently used when a middle dot is unavailable: des.har, in.hèrn, which is the case for French keyboard layout.
+
+In Old Occitan, the symbol · was sometimes used to denote certain elisions, much like the modern apostrophe, the only difference being that the word that gets to be elided is always placed after the interpunct, the word before ending either in a vowel sound or the letter n:
+
+que·l (que lo, that the) versus qu'el (that he)
+From Bertran de Born's Ab joi mou lo vers e·l comens (translated by James H. Donalson):
+Bela Domna·l vostre cors gens
+E·lh vostre bel olh m'an conquis,
+E·l doutz esgartz e lo clars vis,
+E·l vostre bels essenhamens,
+Que, can be m'en pren esmansa,
+De beutat no·us trob egansa:
+La genser etz c'om posc'e·l mon chauzir,
+O no·i vei clar dels olhs ab que·us remir.
+
+Domna·l [ˈdonnal] = Domna, lo ("Lady, the": singular definite article)
+E·lh [eʎ] = E li ("And the": plural definite article)
+E·l [el] = E lo ("And the")
+E·l = E lo ("And the")
+
+No·us [nows] = Non vos ("(do) not... you": direct object pronoun)
+E·l = En lo ("in the")
+No·i [noj] = Non i ("(do) not... there") // Que·us [kews] = Que vos ("that (I)... you")
+
+O pretty lady, all your grace
+and eyes of beauty conquered me,
+sweet glance and brightness of your face
+and all your nature has to tell
+so if I make an appraisal
+I find no one like in beauty:
+most pleasing to be found in all the world
+or else the eyes I see you with have dimmed.
+
+Old Irish
+In many linguistic works discussing Old Irish (but not in actual Old Irish manuscripts), the interpunct is used to separate a pretonic preverbal element from the stressed syllable of the verb, e.g. do·beir "gives". It is also used in citing the verb forms used after such preverbal elements (the prototonic forms), e.g. ·beir "carries", to distinguish them from forms used without preverbs, e.g. beirid "carries".[9] In other works, the hyphen (do-beir, -beir) or colon (do:beir, :beir) may be used for this purpose.
+
+Runes
+Runic texts use either an interpunct-like or a colon-like punctuation mark to separate words. There are two Unicode characters dedicated for this: U+16EB ᛫ Runic single punctuation and U+16EC ᛬ Runic multiple punctuation.
+
+In mathematics and science
+In SI units the middle dot or non-breaking space is used as a multiplication sign. Only a comma or full stop (period) may be used as a decimal marker.
+
+In mathematics, a small middle dot can be used to represent product; for example, x ∙ y for the product of x and y. When dealing with scalars, it is interchangeable with the multiplication sign: x ⋅ y means the same thing as x × y, but × is easily confused with the letter x. However, when dealing with vectors, the dot product is distinct from the cross product. This usage has its own designated code point in Unicode, U+2219 (∙), called the "bullet operator".[citation needed] It is also sometimes used to denote the “AND” relationship in formal logic, due to the relationship between these two operations. In situations where the interpunct is used as a decimal point (as noted above, by many mathematics teachers in some countries[weasel words]), then the multiplication sign used is usually a full stop (period), not an interpunct.
+
+In computing, the middle dot is usually used to indicate white space in various software applications such as word processing, graphic design, web layout, desktop publishing or software development programs. In some word processors, interpuncts are used to denote not only hard space or space characters, but also sometimes used to indicate a space when put in paragraph format to show indentations and spaces. This allows the user to see where white space is located in the document and what sizes of white space are used, since normally white space is invisible so tabs, spaces, non-breaking spaces and such are indistinguishable from one another.
+
+In chemistry, the middle dot is used to separate the parts of formulas of addition compounds, mixture salts or solvates (mostly hydrates), such as of copper(II) sulphate pentahydrate, CuSO4 · 5H2O.
+
+Keyboard input
+On computers, the interpunct may be available through various key combinations, depending on the operating system and the keyboard layout. Assuming a QWERTY keyboard layout unless otherwise stated:
+
+on macOS, an interpunct can be entered by pressing ⌥ Opt+⇧ Shift+9 (or ⌥ Opt+⇧ Shift+. on the Norwegian and Swedish keyboard layouts, ⌥ Opt+. on the Danish keyboard layout and ⌥ Opt+⇧ Shift+F on the French keyboard layout);
+on X Window System-based Linux computers, it can be inserted by pressing AltGr+.; on the GNU/Linux operating system Ubuntu, it can also be inserted by pressing Ctrl+⇧ Shift+U and then typing 00b7 (the Unicode number for the interpunct) or via the Compose key sequence AltGr+⇧ Shift+^+.;
+on Microsoft Windows, it can be inserted by pressing Alt+250 or Alt+0183 (on the numeric keypad). The default shortcut using Azerty Greek polytonic keyboard layout (EL) is AltGr+⇧ Shift+$.
+Similar symbols
+Symbol	Character Entity	Numeric Entity	Unicode Code Point	LaTeX[10]	Notes
+·	&middot;	&#183;	U+00B7 middle dot	\textperiodcentered	German Mittelpunkt
+·		&#903;	U+0387 greek ano teleia		Greek ánō stigmē
+ּ		&#1468;	U+05BC hebrew point dagesh or mappiq		Hebrew point dagesh or mapiq
+᛫		&#5867;	U+16EB runic single punctuation		Runic punctuation
+•	&bull;	&#8226;	U+2022 bullet	\textbullet	bullet, often used to mark list items
+‧		&#8231;	U+2027 hyphenation point		hyphenation point (dictionaries)
+∘	&compfn;	&#8728;	U+2218 ring operator	\circ	ring operator (mathematics)
+∙		&#8729;	U+2219 bullet operator	\bullet	bullet operator (mathematics)
+⋅	&sdot;	&#8901;	U+22C5 dot operator	\centerdot, \cdot, \cdotp	dot operator (mathematics)
+⏺		&#9210;	U+23FA black circle for record		black circle for record
+●		&#9679;	U+25CF black circle
+◦		&#9702;	U+25E6 white bullet		hollow bullet
+⚫		&#9899;	U+26AB medium circle black		medium black circle
+⦁		&#10625;	U+2981 z notation spot		symbol used by the Z notation[11]
+⸰		&#11824;	U+2E30 ring point		Avestan punctuation mark
+⸱		&#11825;	U+2E31 word separator middle dot		word separator (Avestan and other scripts)
+⸳		&#11827;	U+2E33 raised dot		vertical position between full stop and middle dot
+・		&#12539;	U+30FB katakana middle dot		fullwidth katakana middle dot
+ꞏ		&#42895;	U+A78F latin letter sinological dot		letter used in transliteration of 'Phags-pa[12]
+･		&#65381;	U+FF65 halfwidth katakana middle dot		halfwidth katakana middle dot
+𐄁		&#65793;	U+10101 aegean word separator dot		word separator for Aegean scripts[13] (Linear A and Linear B)
+Characters in the Symbol column above may not render correctly in all browsers.
+
+See also
+Punctuation
+Syllabification
+References
+	Wikimedia Commons has media related to Interpuncts.
+ Thanks Catich, Edward (1991). The Origin of the Serif: Brush Writing and Roman Letters. Des Moines, Iowa: Saint Ambrose University Catich Gallery. ISBN 978-0-9629740-1-4.
+ "Cambridge University History Faculty Style Guide 2010". Retrieved 2014-01-12.
+ "The Lancet – Formatting guidelines for electronic submission of manuscripts" (PDF). Retrieved 2017-04-25.
+ Unicode Latin Extended A code chart p.13
+ "CNS11643 中文全字庫-字碼查詢與下載" (in Chinese). Cns11643.gov.tw. Retrieved 2013-04-22.
+ "Thesaurus Linguae Graecae". www.tlg.uci.edu. Archived from the original on 2012-08-06. Retrieved 2011-01-10.
+ Ελληνικός Οργανισμός Τυποποίησης [Ellīnikós Organismós Typopoíīsīs, "Hellenic Organization for Standardization"]. ΕΛΟΤ 743, 2η Έκδοση [ELOT 743, 2ī Ekdosī, "ELOT 743, 2nd ed."]. ELOT (Athens), 2001. (in Greek).
+ Unicode. "Unicode Greek code chart", pp. 34, 36.
+ Thurneysen, Rudolf. A Grammar of Old Irish. trans. D. A. Binchy and Osborn Bergin. Dublin Institute for Advanced Studies. p. 25. ISBN 1-85500-161-6.
+ Pakin, Scott (9 November 2009). "The Comprehensive LATEX Symbol List" (PDF). Archived from the original (PDF) on 28 March 2015. Retrieved 2015-03-19.
+ Bowen, Jonathan P. (May 1995). "Glossary of Z Notation". Information and Software Technology. University of Reading (UK). Retrieved 2015-03-19.
+ West, Andrew (4 April 2009). Unicode Technical Committee, ed. "Proposal to encode a Middle Dot letter for Phags-pa transliteration (UTC Document L2/09-031R, ISO/IEC JTC1/SC2/WG2 Document N3567)" (PDF).
+ Anderson, Deborah; Everson, Michael (2001-10-03). "N2378: Final proposal to encode Aegean scripts in the UCS" (PDF). ISO/IEC JTC1/SC2/WG2. Retrieved 2015-03-19.
+Categories: PunctuationLatin-script diacriticsAncient Greek punctuation
+Navigation menu
+Not logged inTalkContributionsCreate accountLog inArticleTalkReadEditView historySearch
+
+Search Wikipedia
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+In other projects
+Wikimedia Commons
+
+Languages
+Bân-lâm-gú
+Català
+Español
+Français
+한국어
+日本語
+Português
+Русский
+中文
+12 more
+Edit links
+This page was last edited on 14 March 2018, at 09:01.
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersCookie statementMobile viewEnable previews
+Wikimedia Foundation Powered by MediaWiki
