@@ -21,9 +21,18 @@ const promises = inputFileNames.map((inputFileName, index) => {
   return new Promise((resolve, reject) => {
     fs.readFile(inputFileName, 'utf8', (err, data) => {
       if (err) throw err;
-      const words = getWords(data);
+      const hasTypographicApostrophe = /\u2019/.test(data);
+      const str = hasTypographicApostrophe ? data : data.replace(/\u0027/g, '\u2019');
+      const words = getWords(str)
+        .filter(w => w.length > 2)
+        .map(w => w.toLowerCase())
+        .sort((a, b) => a.localeCompare(b))
+        .filter((element, index, array) => array.indexOf(element) === index);
       const text = words.join('\n');
-      fs.writeFile(outputFileNames[index], text, 'utf8', (err) => {
+      fs.writeFile(outputFileNames[index], text, {
+        encoding: 'utf8',
+        flag: 'w'
+      }, (err) => {
         if (err) throw err;
         resolve(fileNames[index]);
       });
