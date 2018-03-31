@@ -2,9 +2,8 @@
   "name": "get-words",
   "version": "0.1.0",
   "description": "Get English words from the text string",
-  "main": "index.js",
+  "main": "lib/index.js",
   "files": [
-    "index.js",
     "lib"
   ],
   "repository": "keqingrong/get-words",
